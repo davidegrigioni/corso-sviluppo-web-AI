@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Esercizio HTML</title>
   </head>
 
@@ -47,53 +47,57 @@
         <p>Compila il modulo: ti ricontatterò per saperne di più.</p>
         <form>
           <fieldset>
-                <legend>I tuoi dati</legend>
-
-                <p>
-                <label for="nome">Nome e cognome <span>(obbligatorio)</span></label>
-                <input
-                    type="text"
-                    id="nome"
-                    name="nome"
-                    autocomplete="name"
-                    placeholder="Es. Mario Rossi"
-                    required
-                />
-                </p>
-
-                <p>
-                <label for="email">Indirizzo email <span>(obbligatorio)</span></label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    autocomplete="email"
-                    placeholder="nome@esempio.it"
-                    required
-                />
-                </p>
+            <legend>I tuoi dati</legend>
 
             <p>
-                <label for="livello">Qual è il tuo livello di esperienza?</label>
-                <select id="livello" name="livello" required>
+              <label for="nome"
+                >Nome e cognome <span>(obbligatorio)</span></label
+              >
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                autocomplete="name"
+                placeholder="Es. Mario Rossi"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="email"
+                >Indirizzo email <span>(obbligatorio)</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                placeholder="nome@esempio.it"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="livello">Qual è il tuo livello di esperienza?</label>
+              <select id="livello" name="livello" required>
                 <option value="" selected disabled>Seleziona un livello</option>
                 <option value="principiante">Principiante</option>
                 <option value="intermedio">Intermedio</option>
                 <option value="avanzato">Avanzato</option>
-                </select>
+              </select>
             </p>
 
             <p>
-                <label for="messaggio">Raccontami cosa ti interessa</label>
-                <textarea
+              <label for="messaggio">Raccontami cosa ti interessa</label>
+              <textarea
                 id="messaggio"
                 name="messaggio"
                 rows="5"
                 maxlength="1000"
                 aria-describedby="messaggio-aiuto"
                 placeholder="Scrivi qui il tuo messaggio (facoltativo)"
-                ></textarea>
-                <small id="messaggio-aiuto">Massimo 1000 caratteri.</small>
+              ></textarea>
+              <small id="messaggio-aiuto">Massimo 1000 caratteri.</small>
             </p>
 
             <button type="submit">Invia la richiesta</button>
